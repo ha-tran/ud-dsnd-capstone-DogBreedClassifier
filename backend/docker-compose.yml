@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  app:
+    build: ./
+    image: dog-breed-backend:latest
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/app
